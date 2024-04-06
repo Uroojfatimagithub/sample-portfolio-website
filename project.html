@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Harry-Developer Portfolio</title><link:style href="project.css" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        background-color: rgb(20, 20, 34);
+        color: white;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        background-color:rgb(32, 32, 61) ;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        margin: 0 23px;
+    }
+    nav ul li{
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: ivory;
+    }
+    nav ul li a:hover{
+        color: rgb(27, 56, 69);
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+    .left{
+        font-size: xx-large;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+    }
+    .firstsection div{
+        width: 30%;
+    }
+    .leftsection{
+        font-size: 2.5rem;
+        margin: 99px;
+    }
+    .buttons .btn{
+      padding: 20px;
+      border-radius: 50px;
+      font-style:oblique;
+      font-size:large;
+      margin:45px 0;
+    }
+    .buttons .btn:hover{
+        cursor: pointer;
+        background-color: rgb(91, 52, 127);
+    }
+    .rightsection img{
+       width: 80%;
+       margin-top: 50px; 
+    }
+    .purple{
+        color: rgb(113, 59, 163);
+    }
+    #element{
+        color: rgb(156, 156, 231);
+    }
+    .secondsection{
+        max-width: 80vw;
+        margin: auto;
+    }
+    hr{
+        border: 0;
+        background-color: rgb(145, 145, 205);
+        height: 1px;
+        margin: 80px 0;
+    }
+    .secondsection h1{
+        font-size: 1.9rem;
+    }
+    .text-gray{
+        color: grey;
+    }
+    .secondsection .box{
+        width: 70vw;
+        background-color: aliceblue;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+    .secondsection .vertical{
+        background-color: aliceblue;
+        width: 1px;
+        height: 93px;
+        margin: 0 130px;
+    }
+    .img-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -5px;
+    }
+    .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+    }
+    .vertical-desc{
+        position: relative;
+        top:90px;
+        color: gray;
+        font-size: 15px;
+        width: 150px;
+    }
+    footer{
+        margin-top: 36%;
+        background-color: rgb(1, 1, 37);
+       width: 100%;
+    }
+    .fooot{
+        
+       padding: 23px 122px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .fooot ul{
+        list-style-type: none;
+    }
+    .fooot > div{
+        width:223px;
+}
+footer .text-centre{
+    text-align: center;
+    color: gray;
+    padding: 12px;
+}
+@media screen and (max-width:2000px ) {
+    body{
+        min-width: fit-content;
+    }
+    nav{
+        width: 100%;
+       
+    }
+   .firstsection{
+   width: 100% !important;
+        flex-direction: column-reverse;
+       display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .rightsection img{
+        flex-direction: column-reverse;
+       display: flex;
+        align-items: center !important;
+        justify-content: center !important;  
+      /* padding-left: 25%;*/
+       width: 321px !important;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .vertical-title{
+        left: 45px;
+    }
+    .vertical-desc{
+        left: 45px;
+        width: 200px;
+    }
+    .img-top{
+        top: 110px;
+    }
+    .secondsection .box{
+        display: flex;
+        align-items: center !important;
+        width: 35vw;
+       margin-left: 25%;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    } 
+    .text-gray{
+        margin-left: 33%;
+    }
+    h1{
+        margin-left:33%;   
+    }
+    .secondsection .vertical{
+        height: auto;
+    }
+    .leftsection
+    {
+        width: 100% !important;
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column;
+    }
+    .secondsection{
+        height: 200vh;
+    }
+    footer{
+        width: 100%;
+    }
+    .fooot{
+        width: 100%; /* Set the initial width to 100% */
+    }
+}
+@media screen and (max-width:630px ) {
+    nav{
+        width: 100%;
+    }}
+</style>
+<body>
+    <nav>
+        <div class="left">Harry's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi! My name is <span class="purple">Harry<br></span>
+                <span>I am a  passionate<br></span>
+                <span id="element"></span><br>
+                <span class="buttons">
+                    <button class="btn" id="linkedinBtn"><b>Visit  LinkedIn Profile</b></button>
+                    <button class="btn" id="githubBtn"><b>Visit Github</b></button>
+            </span>
+            </div>
+            <div class="rightsection">
+                <img src="developer.png">
+            </div>
+        </section>
+      
+        <section class="secondsection">
+            <hr>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+           <div class="box">
+            <div class="vertical">
+                <img class="img-top" src="1.png">
+                <div class="vertical-title">Twitter(2000_2002)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+            <div class="vertical">
+                <img class="img-top" src="2.png">
+                <div class="vertical-title">Facebook(2002_2004)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+            <div class="vertical">
+                <img class="img-top" src="2227.jpg">
+                <div class="vertical-title">Instagram(2006_2008)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+            <div class="vertical">
+                <img class="img-top" src="pngegg.png">
+                <div class="vertical-title">HTML developer (2010-2012)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+            <div class="vertical">
+                <img class="img-top" src="pngwing.com.png">
+                <div class="vertical-title">Youtube(2010_2012)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+            <div class="vertical">
+                <img class="img-top" src="Screenshot (1013).png">
+                <div class="vertical-title">HTML developer (2010-2012)</div>
+                <div class="vertical-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti delectus ipsam magnam praesentium ipsum quibusdam voluptatum illum quos. Placeat quis possimus ipsa?</div>
+            </div>
+           </div>
+        </section>
+    </main>
+<footer>
+        <div class="fooot">
+            <div class="footer-first"><h3>Harry's developer Portfolio</h3></div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul></div>
+                <div class="footer-fourth"><ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul></div>
+            </div>
+       <div class="text-centre">
+       Copyright&#169;www.harry's Portfolio.com |All rights reserved
+       </div>
+    
+    </footer>
+    
+</body>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <!-- Setup and start animation! -->
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web developer</i> ', '<i>Graphic designer</i>','<i>Web designer</i>','Video Editor'],
+      typeSpeed: 50,
+    });
+   
+        // Function to handle the click event for downloading resume
+        document.getElementById("linkedinBtn").onclick = function() {
+            // Replace 'resume_link.pdf' with the actual link to your resume file
+            window.open('https://www.linkedin.com/in/urooj-fatima-6aa724295/', '_blank');
+        };
+
+        // Function to handle the click event for visiting Github
+        document.getElementById("githubBtn").onclick = function() {
+            // Replace 'github_link' with the actual link to your GitHub profile
+            window.open('https://github.com/Uroojfatimagithub', '_blank');
+        };
+   
+  </script>
+</html>
